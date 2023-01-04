@@ -1,0 +1,51 @@
+{
+	"name": "vscode-vimrc",
+	"version": "0.1.0",
+	"description": ".vimrc highlighting for VSCode without needing the full VSCode Vim extension.",
+	"license": "MIT",
+	"author": "voidei",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/voidei/vscode-vimrc"
+	},
+	"keywords": [
+		"neovim",
+		"rc file",
+		"rcfile",
+		"syntax",
+		"vim",
+		"vimrc",
+		"vscodevim"
+	],
+	"engines": {
+		"vscode": "^1.74.0"
+	},
+	"categories": [
+		"Programming Languages"
+	],
+	"contributes": {
+		"languages": [
+			{
+				"id": "vimrc",
+				"extensions": [
+					".vimrc"
+				],
+				"configuration": "./vimrc.language-configuration.json"
+			}
+		],
+		"grammars": [
+			{
+				"language": "vimrc",
+				"scopeName": "source.vimrc",
+				"path": "./syntaxes/vimrc.tmLanguage.json"
+			}
+		]
+	},
+	"displayName": "VSCode .vimrc Syntax",
+	"galleryBanner": {
+		"color": "#e3f4ff",
+		"theme": "light"
+	},
+	"icon": "icon.png",
+	"publisher": "voidei"
+}
